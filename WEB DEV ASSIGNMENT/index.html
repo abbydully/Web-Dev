@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Home</a>
+      <div class="nav-menu" id="navMenu"></div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+  </nav>
+
+  <main class="book-list">
+    <div class="book">
+      <img src="./image/book1.jpeg" alt="Book 1">
+      <div class="book-info">
+        <p><strong>Vinland Saga (Volume 1)</strong><br>Thorfinn is a young boy who seeks revenge after his father, Thors, is killed by the mercenary Askeladd. He joins Askeladd’s crew, hoping to one day defeat him in a duel.</p>
+        <a href="pay.html" onclick="localStorage.setItem('selectedBook', 'Vinland Saga (Volume 1)')">
+            <button>Pay</button>
+          </a>
+
+      </div>
+    </div>
+    <div class="book">
+      <img src="./image/book2.jpg" alt="Book 2">
+      <div class="book-info">
+        <p><strong>Attack on Titan (Volume 1)</strong><br>Eren Yeager vows to destroy the Titans after witnessing one kill his mother. He joins the military with his friends, aiming to fight back and uncover the truth behind the giant creatures.</p>
+        <a href="pay.html" onclick="localStorage.setItem('selectedBook', 'Attack on Titan (Volume 1)')">
+            <button>Pay</button>
+          </a>
+
+      </div>
+    </div>
+    <div class="book">
+      <img src="./image/book3.jpg" alt="Book 3">
+      <div class="book-info">
+        <p><strong>Jujutsu Kaisen (Volume 1)</strong><br>Yuji Itadori swallows a cursed object to save his friends and becomes host to a powerful curse. He joins a school for jujutsu sorcerers to fight curses and protect others.</p>
+        <a href="pay.html" onclick="localStorage.setItem('selectedBook', 'Jujutsu Kaisen (Volume 1)')">
+            <button>Pay</button>
+          </a>
+
+     </div>
+    </div>
+    <div class="book">
+      <img src="./image/book4.jpg" alt="Book 4">
+      <div class="book-info">
+        <p><strong>Naruto (Volume 1)</strong><br>Naruto Uzumaki is a young ninja shunned by his village for housing a powerful beast. Determined to earn their respect, he dreams of becoming the strongest ninja—Hokage.</p>
+        <a href="pay.html" onclick="localStorage.setItem('selectedBook', 'Naruto (Volume 1)')">
+            <button>Pay</button>
+          </a>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

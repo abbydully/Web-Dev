@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Success</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .success-message {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: #e6ffe6;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .success-message h2 {
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-message">
+    <h2>Thank you for your payment!</h2>
+    <p id="cardInfo">Your card ending in **** **** **** XXXX</p>
+  </div>
+
+  <script>
+    const lastFour = localStorage.getItem("lastFourDigits") || "XXXX";
+    document.getElementById("cardInfo").textContent = `Your card ending in **** **** **** ${lastFour}`;
+  </script>
+</body>
+</html>
