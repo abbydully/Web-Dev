@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Home</a>
+      <div class="nav-title">My Bookshop</div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+  </nav>
+
+  <main class="book-list">
+    <div class="book">
+      <img src="../Images/book1.jpeg" alt="Cover of Vinland Saga Volume 1">
+      <div class="book-info">
+        <p><strong>Vinland Saga (Volume 1)</strong><br>
+        Thorfinn is a young boy who seeks revenge after his father, Thors, is killed by the mercenary Askeladd. He joins Askeladd’s crew, hoping to one day defeat him in a duel.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Vinland Saga (Volume 1)')">Pay</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="../Images/book2.jpg" alt="Cover of Attack on Titan Volume 1">
+      <div class="book-info">
+        <p><strong>Attack on Titan (Volume 1)</strong><br>
+        Eren Yeager vows to destroy the Titans after witnessing one kill his mother. He joins the military with his friends, aiming to fight back and uncover the truth behind the giant creatures.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Attack on Titan (Volume 1)')">Pay</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="../Images/book3.jpg" alt="Cover of Jujutsu Kaisen Volume 1">
+      <div class="book-info">
+        <p><strong>Jujutsu Kaisen (Volume 1)</strong><br>
+        Yuji Itadori swallows a cursed object to save his friends and becomes host to a powerful curse. He joins a school for jujutsu sorcerers to fight curses and protect others.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Jujutsu Kaisen (Volume 1)')">Pay</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="../Images/book4.jpg" alt="Cover of Naruto Volume 1">
+      <div class="book-info">
+        <p><strong>Naruto (Volume 1)</strong><br>
+        Naruto Uzumaki is a young ninja shunned by his village for housing a powerful beast. Determined to earn their respect, he dreams of becoming the strongest ninja—Hokage.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Naruto (Volume 1)')">Pay</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="../Images/book5.jpg" alt="Cover of Berserk Volume 1">
+      <div class="book-info">
+        <p><strong>Berserk (Volume 1)</strong><br>
+        Guts, a lone mercenary with a tragic past, battles through a dark and brutal world. Driven by rage and survival, he seeks vengeance against the former friend who betrayed him.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Berserk (Volume 1)')">Pay</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="../Images/book6.jpg" alt="Cover of Tokyo Ghoul Volume 1">
+      <div class="book-info">
+        <p><strong>Tokyo Ghoul (Volume 1)</strong><br>
+        Ken Kaneki becomes a half-ghoul after a deadly encounter and struggles to live between the human and ghoul worlds. He must adapt to his new identity while fighting for survival.</p>
+        <a href="pay.html" class="pay-button" onclick="localStorage.setItem('selectedBook', 'Tokyo Ghoul (Volume 1)')">Pay</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>
